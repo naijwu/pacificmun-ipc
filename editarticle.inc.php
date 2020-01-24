@@ -16,7 +16,7 @@ if(isset($_POST['update-submit'])) {
     $sql = "UPDATE Articles SET author='" . $author . "', title='" . $title . "', subtitle='" . $subtitle . "', body='" . $body . "', date='" . $time . "' WHERE id='" . $id . "';";
     
     if(mysqli_query($conn, $sql)) { 
-        header('Location: login.php?status=postsuccess'); 
+        header('Location: article.php?id=' . $id); 
     } else {
         header('Location: login.php?status=posterror');
         exit();
