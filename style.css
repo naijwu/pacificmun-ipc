@@ -1,0 +1,514 @@
+:root {
+    --dark: #1f2539;
+    --font-dark: #1f2539;
+    --font-highlight: rgba(163, 4, 4, 1);
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+html,
+body {
+    height:100%;
+    width:100%;
+}
+
+
+.container {
+    width:1070px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+
+header {
+    top:0;
+    left:0;
+    width:100%;
+    height:225px;
+    background:white;
+} 
+
+header .container {
+    width:1100px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    height:100%;
+}
+
+header .utility {
+    height:50px;
+    background:var(--dark);
+}
+
+header .utility .container {
+    justify-content:flex-end;
+}
+
+header .utility a {
+    color:white;
+    font-family:"Merriweather", serif;
+    text-decoration:none;
+    margin:0 15px;
+    letter-spacing:0.2px;
+    font-size:14px;
+}
+
+i {
+    margin-right:5px;
+}
+
+header .logo {
+    height:125px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+header .logo img {
+    height:calc(100% - 60px);
+    padding:30px 0;
+    width:auto;
+}
+
+header nav {
+    height:50px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-style:solid none;
+    border-width:1px;
+    border-color:#ccc;
+    box-sizing: border-box;
+}
+
+header nav a {
+    text-decoration:none;
+    font-family:"Merriweather", serif;
+    margin:0 15px;
+    color:var(--dark);
+    font-weight:bold;
+    font-size:15px;
+}
+
+
+
+
+main {
+    box-sizing: border-box;
+    padding:100px 0 150px 0; /* 325px */
+}
+
+main .container {
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+main .container article {
+    box-sizing: border-box;
+    padding-bottom:75px;
+}
+
+main .container article:last-child {
+    padding-bottom:0;
+}
+
+main h1 {
+    font-family:"Merriweather", serif;
+    font-weight:700;
+    letter-spacing:1.5px;
+    font-size:40px;
+    color:var(--font-dark);
+}
+
+main h2 {
+    font-family:"Merriweather", serif;
+    font-weight:700;
+    font-size:18px;
+    padding:10px 0 25px 0;
+    color:var(--font-dark);
+}
+
+main p {
+    font-family:"Merriweather", serif;
+    font-size:15px;
+    letter-spacing:0.2px;
+    line-height:30px;
+}
+
+main a {
+    font-family:"Merriweather", serif;
+    font-size:15px;
+    letter-spacing:0.2px;
+    line-height:30px;
+    color:var(--font-highlight);
+    text-decoration:none;
+}
+
+main a:hover {
+    border-style:none none solid none;
+    border-width:1.5px;
+    border-color:var(--font-highlight);
+}
+
+main article .grid {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    margin-top:25px;
+}
+
+
+main article .grid .agency-item {
+    width:calc(100% / 4.20);
+    box-sizing:border-box;
+    background:var(--dark);
+    margin-bottom:20px;
+    color:white;
+
+    display:flex;
+    flex-direction:column;
+}
+
+main article .grid .agency-item img {
+    width:30%;
+}
+
+main article .grid .agency-item h3 {
+    font-family:"Merriweather", serif;
+    letter-spacing:0.5px;
+    padding:20px;
+}
+
+main article .grid .agency-item a {
+    font-size:14px;
+    background:var(--font-highlight);
+    color:white;
+    width:100%;
+    box-sizing:border-box;
+    padding:5px 20px;
+    font-weight:bold;
+}
+
+main article .grid .agency-item a:hover {
+    border:none;
+}
+
+
+
+
+footer {
+    box-sizing: border-box;
+    padding:100px 0;
+    width:100%;
+    border-style:solid none none none;
+    border-width:1px;
+    border-color:#ccc;
+}
+
+footer .container {
+    flex-direction:column;
+    justify-content:center;
+}
+
+footer .container h1 {
+    font-size:16px;
+    font-family:"Merriweather", serif;
+    font-weight:700;
+    padding-bottom:10px;
+    letter-spacing:0.3px;
+}
+
+footer .container h2 {
+    font-size:16px;
+    font-family:"Merriweather", serif;
+    font-weight:400;
+    color:#777;
+    padding-bottom:10px;
+    letter-spacing:0.3px;
+}
+
+footer a {
+    text-decoration:none;
+}
+
+
+
+
+body.agency header,
+body.article header {
+    height:100px;
+}
+
+body.agency header .utility .container,
+body.article header .utility .container {
+    justify-content:space-between;
+}
+
+body.agency header .utility .container .name h2,
+body.article header .utility .container .name h2 {
+    color:white;
+    font-family:"Merriweather", serif;
+    font-size:15px;
+    letter-spacing:0.5px;
+    padding-left:15px;
+} 
+
+
+body.agency article {
+    width:100%;
+}
+
+body.agency .rows {
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+body.agency .article-item {
+    width:48.5%;
+    box-sizing:border-box;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+body.agency .article-item h3 {
+    font-family:"Merriweather", serif;
+    font-weight:bold;
+    line-height:35px;
+    font-size:22px;
+}
+
+body.agency .article-item h4 {
+    font-family:"Merriweather", serif;
+    font-weight:bold; 
+    line-height:25px;
+    font-size:16px;
+}
+
+body.agency .article-item h5 {
+    font-family:"Merriweather", serif;
+    font-weight:bold; 
+    line-height:25px;
+    font-size:16px;
+    color:#777;
+}
+
+
+body.article article {
+    width:600px;
+    margin:0 auto;
+    padding: 45px 0 25px 0;
+}
+
+body.article article.bio {
+    padding-top:0;
+}
+
+body.article article.title {
+    padding-bottom:0;
+}
+
+body.article article.title h2 {
+    font-weight:normal;
+}
+
+body.article article.pbody {
+    padding-top:0;
+}
+
+body.article h4,
+body.article h3 {
+    font-size:16px;
+    font-family:"Merriweather", serif;
+    line-height:30px;
+}
+
+body.article .title h2 {
+    color:#777;
+    font-size:18px;
+    line-height:35px;
+}
+
+body.article h3 {
+    color:#777;
+}
+
+body.article .image-container {
+    width:100%;
+    max-height:600px;
+    background:black;
+    margin-bottom:45px;
+    margin-top:25px;
+}
+
+body.article .image-container img {
+    height:30vw;
+    width:100%;
+    object-fit:cover;
+}
+
+body.article p {
+    font-size:18px;
+    line-height:35px;
+    margin-top:30px;
+}
+
+body.article h5 {
+    font-size:30px;
+    font-family:"Merriweather", serif;
+    margin-top:35px;
+}
+
+body.article h6 {
+    font-size:20px;
+    font-family:"Merriweather", serif;
+    margin-top:35px;
+}
+
+
+
+main.login form {
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+
+main.login form h3 {
+    font-family:"Merriweather", serif;
+    font-size:14px;
+    padding-bottom:10px;
+}
+
+main.login form input,
+main.login form select,
+main.login form textarea {
+    width:300px;
+    margin-bottom:20px;
+    padding:10px;
+    font-size:15px;
+    font-family:"Merriweather", serif;
+    letter-spacing:1px;
+    border:1px solid #ccc;
+}
+
+main.login form textarea {
+    height:300px;
+    white-space: pre-wrap;
+    resize:none;
+}
+
+main.login form input[type="submit"] {
+    border:none;
+    background:var(--dark);
+    color:white;
+    padding:15px 10px;
+    box-sizing: border-box;
+}
+
+main.login form input[type="submit"]:hover {
+    cursor:pointer;
+}
+
+main.login article {
+    width:100%;
+}
+
+main.login form.wide-inputs input,
+main.login form.wide-inputs select,
+main.login form.wide-inputs textarea {
+    width:100%;
+    padding:15px 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width:100%;
+        box-sizing:border-box;
+        padding:0 10px;
+    }
+
+    html,
+    body {
+        width:100vw; 
+    }
+
+    header {
+        width:100vw;
+    }
+
+    .utility .container {
+        width:100%;
+        box-sizing:border-box;
+        padding:0 10px;
+    }
+
+    article .grid {
+        flex-direction:column;
+        width:100%;
+    }
+
+    main article .grid .agency-item {
+        width:100%;
+    }
+
+    nav .container {
+        overflow-x:auto;
+    }
+
+    nav .container a {
+        display:table;
+        width:150px;
+    }
+    
+    header {
+        height:250px;
+    }
+
+    header nav {
+        height:75px;
+    }
+
+    .rows {
+        flex-direction:column;
+    }
+
+    body.agency .article-item {
+        width:100%;
+    }
+
+    body.agency header,
+    body.article header {
+        height:175px;
+    }
+
+    body.agency header .utility,
+    body.article header .utility {
+        height:100px;
+    }
+
+    body.agency header .utility .container,
+    body.article header .utility .container {
+        align-items:flex-start;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    body.agency header .utility .container .name,
+    body.article header .utility .container .name {
+        margin-bottom:15px;
+    }
+
+    body.article article {
+        width:100%;
+    }
+} 
