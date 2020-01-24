@@ -3,7 +3,7 @@ International Press Corps committee of PacificMUN 2020. Very very simple CMS art
 
 Created from scratch within 24 hours. Could have been more efficient and set up a wordpress website, but I've always wanted to try to create a news website w a CMS
 
-Live version can be found at ipc.pacificmun.org
+Live version can be found at http://ipc.pacificmun.org
 
 Actual pages:
  - Home page
