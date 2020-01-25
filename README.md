@@ -13,6 +13,7 @@ Actual pages:
  - Edit article page
  
 Features:
+  - Post an article
   - Edit article
   - Image (have to manually (1) upload to server and (2) insert the name of the file into the respective column in the Articles table)
   
