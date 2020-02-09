@@ -18,4 +18,4 @@ Features:
   - Image (have to manually (1) upload to server and (2) insert the name of the file into the respective column in the Articles table)
   
 Notes:
-Insecure... haven't tested out xss scenarios via the form inputs... the article page spits out the contents of the "body" column as an HTML. Didn't think that would be an issue since the "post article" feature would only be available for the Dais team that wouldn't know any of those, nor would be actively malevolent to try to break the site. Also, time constraint.
+Unsecure... haven't tested out xss scenarios via the form inputs... the article page spits out the contents of the "body" column as an HTML. Didn't think that would be an issue since the "post article" feature would only be available for the Dais team that wouldn't know any of those, nor would be actively malevolent to try to break the site. Also, time constraint.
